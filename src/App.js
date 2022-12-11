@@ -2,9 +2,10 @@ import React from 'react'
 import {useEffect, useState} from 'react'
 import './App.css'
 
-URL='https://api.adviceslip.com/advice'
+
 
 function App() {
+  URL='https://api.adviceslip.com/advice'
   const [advice,setAdvice]=useState('')
 
   const getAdvice = async() =>{
