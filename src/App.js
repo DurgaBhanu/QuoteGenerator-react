@@ -24,7 +24,7 @@ function App() {
     <div className='App'>
       <div className='box'>
         <h1 className='quote'>{advice}</h1>
-        <button className='button' onClick={getAdvice}>
+        <button className='button' onClick={getAdvice()}>
           <span>Get advice</span>
         </button>
       </div>
