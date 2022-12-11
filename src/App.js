@@ -5,12 +5,12 @@ import './App.css'
 
 
 function App() {
-  URL='https://api.adviceslip.com/advice'
+  const ApiURL='https://api.adviceslip.com/advice'
   const [advice,setAdvice]=useState('')
 
   const getAdvice = async() =>{
   
-      const response = await fetch(`${URL}`)
+      const response = await fetch(`${ApiURL}`)
       const data = await response.json()
       setAdvice(data.slip.advice)
     
